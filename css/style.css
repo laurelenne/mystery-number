@@ -1,0 +1,62 @@
+html {
+    background-color: black;
+}
+
+html body {
+    height: 100vh;
+    background-color: indigo;
+    width: 100vw;
+}
+
+#body-container {
+    background-color: black;
+}
+
+header h1 {
+    font-family: 'Montez', cursive;
+    font-size: 3rem;
+    background-color: indigo;
+}
+
+#jeu {
+    background-color: gainsboro;
+    font-family: 'Petrona', serif;
+}
+
+#input-container {
+    background-color: indigo;
+}
+
+
+#input {
+    width: auto;
+    margin: auto;
+    -webkit-box-shadow: inset 0px 0px 21px -1px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 21px -1px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 21px -1px rgba(0,0,0,1);
+}
+
+#bouton {
+    font-family: 'Petrona', serif;
+    width: auto;
+    margin: auto;
+}
+#d1 {
+    background-color: gainsboro;
+}
+#p1,#p2,#p3 {
+    height: auto;
+    min-height: 15vh;
+    -webkit-box-shadow: inset 0px 10px 12px -5px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 10px 12px -5px rgba(0,0,0,1);
+    box-shadow: inset 0px 10px 12px -5px rgba(0,0,0,1);
+    font-size: 0.8rem;
+}
+#info-section p {
+    margin-bottom: 0px;
+    -webkit-box-shadow: 0px 0px 21px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 21px -1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 21px -1px rgba(0,0,0,1);
+    font-size: 0.8rem;
+}
+
