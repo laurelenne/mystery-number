@@ -1,1 +1,1 @@
-# mystery-number
+# https://laurelenne.github.io/mystery-number
