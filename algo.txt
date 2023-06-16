@@ -1,0 +1,13 @@
+
+
+Si valeurInput est vide 
+Si valeurInput n'est pas un nombre
+
+Si valeurInput est bonne
+    Si valeurInput est plus petite
+    Si valeurInput est plus grande
+Si valeurInput n'est pas bonne
+
+
+Si essais < 0
+Sinon
