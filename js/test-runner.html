@@ -14,9 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap&family=Petrona&display=swap"
         rel="stylesheet">
     <!-- Bootstrap Boostwatch/Sketchy -->
-    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/bootstrap.min.css">
     <!-- CSS Custom -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="game">
@@ -28,32 +28,22 @@
         <section class="game container text-center">
             <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                    aria-valuenow="5" aria-valuemin="0" aria-valuemax="10" style="width: 10%;"></div>
+                    aria-valuenow="5" aria-valuemin="0" aria-valuemax="10" style="width: 0%;"></div>
             </div>
-            <div class="btn-toolbar justify-content-around mb-3 p-3 text-light" role="toolbar"
+            <div class="btn-toolbar mb-3 p-3 text-light" role="toolbar"
                 aria-label="Toolbar with button groups">
-                <div id="try-1"></div>
-                <div id="try-2"></div>
-                <div id="try-3"></div>
-                <div id="try-4"></div>
-                <div id="try-5"></div>
-                <div id="try-6"></div>
-                <div id="try-7"></div>
-                <div id="try-8"></div>
-                <div id="try-9"></div>
-                <div id="try-10"></div>
             </div>
-            <div class="d-flex flex-column mb-5 ">
-                <label id="label" for="input" class="text-light mb-4">Faîtes une proposition :</label>
-                <input id="input" type="text" onfocus="this.value = ''" size="2" maxlength="2" placeholder="??"
-                    class="text-center display-1 form-control">
+            <div class="d-flex flex-column mb-5">
+                <label id="label" for="nbrIpt" class="text-light mb-4">Faîtes une proposition :</label>
+                <input id="nbrIpt" type="text" onfocus="this.value = ''" size="2" maxlength="2" placeholder="??"
+                    class="text-center display-1 ">
             </div>
 
             <div id="info" class="d-flex text-light justify-content-center">
-                <p id='p-info'></p>
+                <p id="p-info"></p>
             </div>
 
-            <button id="btn-valid" checkValue() class="btn btn-light">Valider</button>
+            <button id="btn-valid" class="btn btn-light" type="button">Valider</button>
         </section>
     </div>
 
@@ -69,7 +59,8 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <!-- Script Custom -->
-    <script src="./js/app.js"></script>
+    <script src="guessingGame.js"></script>
+    <script src="guessingGameTests.js"></script>
 </body>
 
 </html>

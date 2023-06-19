@@ -1,0 +1,93 @@
+/*
+ * Base structure
+ */
+
+body {
+  background-image: url('../asset/bg-game.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+.container-info {
+
+}
+
+.btn-valid {
+  
+}
+
+#input {
+  width: auto;
+  margin: auto;
+  padding: 1rem;
+  -webkit-box-shadow: inset 0px 0px 21px -1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 21px -1px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 21px -1px rgba(0, 0, 0, 1);
+}
+
+.btn-toolbar {
+  min-height: 60px;
+}
+
+#p-info {
+  min-height: 30px;
+}
+
+.progress-bar {
+  background-color: rgb(189, 38, 235);
+}
+
+#nbrIpt {
+  width: auto;
+  margin: auto;
+}
+
+
+
+.container-box {
+  min-height: 300px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes forward {
+  0% {
+    transform: scale(0) rotate(340deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(340deg);
+  }
+}
+
+.win {
+  font-size: 8rem;
+  color: rgb(239, 255, 20);
+  transform: rotate(340deg);
+  animation: forward 2s ease 0s 1 normal forwards;
+  text-shadow: 3px 6px 7px rgba(0, 0, 0, 1);
+}
+
+.loose {
+  font-size: 8rem;
+  color: rgb(255, 28, 20);
+  transform: rotate(340deg);
+  animation: forward 2s ease 0s 1 normal forwards;
+  text-shadow: 3px 6px 7px rgba(0, 0, 0, 1);
+}
+
+.try {
+  margin-right: 1rem;
+}

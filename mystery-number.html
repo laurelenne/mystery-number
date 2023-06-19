@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Le nombre mystère</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap&family=Petrona&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Boostwatch/Sketchy -->
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="./css/mystery-number.css">
+</head>
+
+<body>
+    <div class="container-cover d-flex w-100 h-100 mx-auto flex-column justify-content-center">
+        <header class="container text-center">
+            <h1 class="text-light">Le nombre mystère</h1>
+        </header>
+
+        <section class="section-game text-center">
+            <div class="container-progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="5" aria-valuemin="0" aria-valuemax="10" style="width: 0%;"></div>
+            </div>
+            <div class="container-try btn-toolbar mb-3 p-3 text-light" role="toolbar"
+                aria-label="Toolbar with button groups"></div>
+            <div class="container-input d-flex flex-column mb-5">
+                <label id="label" for="nbrIpt" class="text-light mb-4">Faîtes une proposition :</label>
+                <input id="nbrIpt" type="text" onfocus="this.value = ''" size="2" maxlength="2" placeholder="??"
+                    class="text-center display-1 ">
+            </div>
+
+            <div class="container-info d-flex text-light justify-content-center">
+                <p id="p-info"></p>
+            </div>
+
+            <button class="btn-valid btn btn-light" type="button">Valider</button>
+        </section>
+    </div>
+
+
+    <!-- Jquery & Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- Script Custom -->
+    <script src="./js/app.js"></script>
+    <script src="./js/tests-unitaire.js"></script>
+</body>
+
+</html>

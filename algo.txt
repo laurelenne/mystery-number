@@ -1,13 +1,39 @@
+var isNbr = false;
+var valIpt = ('#nbrIpt').val();
 
+if (!isNaN(parseInt(valIpt))) {
+    valIpt = parseInt(valIpt);
+    isNbr = true;
+}
 
-Si valeurInput est vide 
-Si valeurInput n'est pas un nombre
+checkIpt();
 
-Si valeurInput est bonne
-    Si valeurInput est plus petite
-    Si valeurInput est plus grande
-Si valeurInput n'est pas bonne
-
-
-Si essais < 0
-Sinon
+var checkIpt = () => {
+    if (!isNaN($valIpt)) {
+    if ($valIpt > $valMax || $valIpt > $valMax) {
+        if ($valIpt > $valMax) {
+            alert('La valeur maximale est de $maxVal');
+        } else {
+            alert('La valeur minimale est de $minVal');
+        }
+    } else {
+        if ($try > 0) {
+            if ($valIpt > $nbr) {
+                alert('Le nombre à trouver est plus petit');
+            } else ($valIpt === $nbr){
+                alert('Gagné !');
+            } else {
+                alert('Le nombre à trouver est plus grand');
+            } 
+        } else {
+            alert('Perdu !');
+        }
+    }
+    } else if (isNaN($valIpt)) {
+        if (isEmpty($valIpt)) {
+            alert('Veuillez choisir un nombre');
+        } else {
+            alert('Ce n'est pas un nombre');
+        }
+    }
+}
